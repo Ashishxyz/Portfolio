@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Portfolio Website Design</title>
+<link rel="stylesheet" href="style.css">
+<!----Font awesome cdn font icon css -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+<div class="hero-header">
+<div class="wrapper">
+<header>
+<div class="logo">
+<i class="fa-solid fa-a"></i>
+<div class="logo-text">Ashish Srivastava</div>
+</div>
+<nav>
+<div class="togglebtn">
+<span></span>
+<span></span>
+<span></span>
+</div>
+<ul class="navlinks">
+<li><a href="#">Home</a></li>
+<li><a href="#">Portfolio</a></li>
+<li><a href="https://drive.google.com/file/d/1FtugZtzIEocJHoVRJwlkxajQ_4XkYD3e/view?usp=sharing">Resume</a></li>
+<li><a href="#">Blog</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</header>
+<div class="container">
+    <div class="hero-pic">
+    <img src="main_photo.jpg" alt="profile pic">
+    </div>
+    <div class="hero-text">
+    <h5>Hi I'm <span class="">Frontend Developer</span></h5>
+    <h1>Ashish Srivastava</h1>
+    <p> I am a motivated Computer Science Graduate, dedicated to achieving excellence in all tasks. 
+        I thrive on teamwork and welcome challenges, embracing change with a positive mindset. 
+        My commitment to honesty and trustworthiness, combined with my creativity and meticulous 
+        organizational skills, drives me to contribute actively to the team's success.
+    </p>
+    <div class="btn-group">
+    <a href="https://drive.google.com/file/d/1FtugZtzIEocJHoVRJwlkxajQ_4XkYD3e/view?usp=sharing" class="btn_active">Download CV</a>
+    <a href="contact.html" class="btn">Contact</a>
+    </div>
+<div class="social">
+    <a href="https://www.linkedin.com/in/ashish--srivastava/"><i class="fa-brands fa-linkedin"></i></a>
+    <a href="https://github.com/Ashishxyz"><i class="fa-brands fa-github"></i></a>
+    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+    <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+    <a href="#"><i class="fa-brands fa-pintrest"></i></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!---typed js for typing text effect-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+<script>
+    /** creating button click show hide navbar **/
+    var togglebtn=document.querySelector(".togglebtn");
+    var nav=document.querySelector(".navlinks");
+    var links=document.querySelector(".navlinks li");
+    togglebtn.addEventListener("click", function(){
+        this.classList.toggle("click");
+        nav.classList.toggle("open");
+    })
+    var typed=new Typed(".input",{
+        strings: ["Frontend Developer", "UX Designer", "Web Developer"],
+        typedSpeed: 70,
+        backSpeed: 55,
+        loop:true
+    })
+</script>
+</body>
+</html>
